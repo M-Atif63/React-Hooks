@@ -8,6 +8,7 @@ function Practice() {
     <div>
       <H2 btnValue='useState Examples'/>
       <CounterPractice/>
+      <hr />
       <H2 btnValue='Handle Value Change Practice'/>
       <HandleInputValue/>
     </div>

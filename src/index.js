@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ChangeTheme from './Components/Pages/ChangeTheme';
+// import ChangeTheme from './Components/Pages/ChangeTheme';
+import ChangTheme from './Components/Pages/ChangTheme.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

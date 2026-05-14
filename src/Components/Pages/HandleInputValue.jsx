@@ -3,13 +3,8 @@ import InputField from '../InputFields/InputField'
 import { themeContext } from './ChangeTheme'
 
 function HandleInputValue() {
-  const {theme} = useContext(themeContext)
   const [changeValue, setChangeValue] = useState('')
   return (
-    <div style={{
-            background: theme === 'light' ? 'white' : 'black', 
-            color: theme === 'light' ? 'black' : 'white',
-        }}>
       <center>
         <InputField placeholderValue="Enter Your Comment" styling={{
           width: "300px",
@@ -20,7 +15,6 @@ function HandleInputValue() {
           onChange={(e) => setChangeValue(e.target.value)} />
         <p>{changeValue}</p>
       </center>
-    // </div>
   )
 }
 

@@ -36,17 +36,15 @@
 
 
 // import React, { createContext, useState } from 'react'
-import Practice from "./Components/Pages/Practice.jsx"
-
 import React from 'react'
-import ChangeTheme from "./Components/Pages/ChangeTheme.jsx"
-import Routing from "./Components/Route/Routing.jsx"
-import CounterPractice from "./Components/Pages/CounterPractice.jsx"
-
+import Routing from '../src/Components/Route/Routing.jsx'
+import ChangTheme from './Components/Pages/ChangTheme.jsx'
 function App() {
   return (
     <div>
-      <Routing/> 
+      <ChangTheme>
+      <Routing/>
+      </ChangTheme>
     </div>
   )
 }

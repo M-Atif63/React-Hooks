@@ -1,19 +1,19 @@
-import React, {  useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Btns from '../Btns/Btns.jsx'
 import H3 from '../Headings/H2.jsx'
 import H2 from '../Headings/H2.jsx'
-import { themeContext } from './ChangeTheme.jsx'
-
+import { themeContext } from '../Pages/ChangTheme.jsx'
 
 function CounterPractice() {
-    const { theme ,toggleTheme} = useContext(themeContext)
+    const { theme, toggleTheme } = useContext(themeContext)
     const [proCount, setproCount] = useState(0)
     return (
         <div style={{
-            background: theme === 'light' ? 'white' : 'black', 
+            background: theme === 'light' ? 'white' : 'black',
             color: theme === 'light' ? 'black' : 'white',
         }}>
-            <div style={{  
+
+            <div style={{
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -22,10 +22,11 @@ function CounterPractice() {
                 fontSize: '20px',
                 height: '100vh'
             }}>
+                {/* <button onClick={()=>toggleTheme()}>change Theme</button> */}
                 <select onChange={(e)=>toggleTheme(e.target.value)}>
                     <option value="light">Light</option>
                     <option value="dark">Dark</option>
-                </select>
+                    </select>
                 <Btns className="dec-btn" id="decBtn" onClick={() => setproCount(proCount - 1)} btnValue="-" />
                 <H2 btnValue={proCount} />
                 <Btns className="inc-btn" id="incBtn" onClick={() => setproCount(proCount + 1)} btnValue="+" />

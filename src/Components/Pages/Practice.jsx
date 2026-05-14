@@ -1,17 +1,18 @@
-import React from 'react'
-import CounterPractice from './CounterPractice.jsx'
-import HandleInputValue from './HandleInputValue.jsx'
-import H2 from '../Headings/H2.jsx'
+import React, { useContext } from 'react'
 import Btns from '../Btns/Btns.jsx'
-import ChangeTheme, { themeContext } from './ChangeTheme.jsx'
+import ChangTheme from './ChangTheme.jsx'
+
 
 function Practice() {
   return (
     <div>
-      {/* <H2 btnValue='useState Examples' /> */}
-      <ChangeTheme />
-      <hr />
+      <ChangTheme/>
     </div>
+    // <div style={{
+    //   background: theme === 'light' ? 'white' : 'black',
+    //   color: theme === 'light' ? 'black' : 'white'
+    // }}>
+    // </div>
   )
 }
 

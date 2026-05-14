@@ -2,9 +2,11 @@ import React from 'react'
 
 function H2(props) {
   return (
-    <div>
-      <center><h2>{props.btnValue}</h2></center>
-    </div>
+    <center>
+      <div>
+        <h2>{props.btnValue}</h2>
+      </div>
+    </center>
   )
 }
 

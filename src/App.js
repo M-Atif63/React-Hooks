@@ -39,11 +39,14 @@
 import Practice from "./Components/Pages/Practice.jsx"
 
 import React from 'react'
+import ChangeTheme from "./Components/Pages/ChangeTheme.jsx"
+import Routing from "./Components/Route/Routing.jsx"
+import CounterPractice from "./Components/Pages/CounterPractice.jsx"
 
 function App() {
   return (
     <div>
-      <Practice/>
+      <Routing/> 
     </div>
   )
 }

@@ -36,16 +36,14 @@
 
 
 // import React, { createContext, useState } from 'react'
-import React from 'react'
-import Routing from '../src/Components/Route/Routing.jsx'
-import ChangTheme from './Components/Pages/ChangTheme.jsx'
+import React, { useContext } from 'react'
+import { ProjectTheme } from './Components/Pages/ChangTheme.jsx'
+import Routing from './Components/Route/Routing.jsx'
 function App() {
   return (
-    <div>
-      <ChangTheme>
-      <Routing/>
-      </ChangTheme>
-    </div>
+    <>
+      <Routing />
+    </>
   )
 }
 

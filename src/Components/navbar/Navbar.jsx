@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { ProjectTheme } from '../Pages/ChangTheme'
+import '../../App.css';
+import Btns from '../Btns/Btns';
 
 function Navbar() {
     const { theme, toggleColor } = useContext(ProjectTheme)
@@ -16,6 +18,7 @@ function Navbar() {
     const navListStyle = {
         display: 'flex',
         justifyContent: 'center',
+        alignContent:'center',
         marginTop: '5px',
         gap: '30px',
         TextDecoderation: 'none',
@@ -73,13 +76,14 @@ function Navbar() {
                 <h3>Muhammed Atif</h3>
             </div>
             <div className='navList' style={navListStyle}>
-                <Link to={'/'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Home</Link>
-                <Link to={'/about'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>About</Link>
-                <Link to={'/blogs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Blogs</Link>
-                <Link to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</Link>
-                <Link to={'/feedback'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Feedback</Link>
-                <Link to={'/contact'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Contact</Link>
-                <Link to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</Link>
+                <NavLink to={'/'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Home</NavLink>
+                <NavLink to={'/about'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
+                <NavLink to={'/blogs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Blogs</NavLink>
+                <NavLink to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</NavLink>
+                <NavLink to={'/feedback'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Feedback</NavLink>
+                <NavLink to={'/contact'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Contact</NavLink>
+                <NavLink to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
+                <Btns btnValue="Login"/>
                 <label style={styles.label} htmlFor="theme-toggle-input">
                     <input
                         type="checkbox"

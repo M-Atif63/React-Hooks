@@ -84,7 +84,7 @@ function Navbar() {
                 <NavLink to={'/contact'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Contact</NavLink>
                 <NavLink to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
                 <Btns btnValue="Login"/>
-                <label style={styles.label} htmlFor="theme-toggle-input">
+                 <label style={styles.label} htmlFor="theme-toggle-input">
                     <input
                         type="checkbox"
                         id="theme-toggle-input"

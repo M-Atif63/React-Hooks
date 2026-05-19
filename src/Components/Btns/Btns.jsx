@@ -13,7 +13,7 @@ function Btns(props) {
     justifyContent: 'center',
     alignItems: 'center',
     fontFamily: "'Inter', sans-serif",
-    fontSize: '15px',
+    fontSize: '20px',
     fontWeight: '500',
     letterSpacing: '0.3px',
     backgroundColor: theme==='light'?'black':'white',

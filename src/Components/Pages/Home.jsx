@@ -27,7 +27,7 @@ function Home() {
           gap: '25px',
           width: '100%',
           fontSize: '20px',
-          height: '100vh'
+          background:theme==='light'?'white':'#222'
         }}>
           <Btns className="dec-btn" id="decBtn" onClick={() => dispatch({ type: 'decrement' })} btnValue="-" />
           <H2 btnValue={state.count} />

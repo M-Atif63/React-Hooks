@@ -93,6 +93,7 @@ function Navbar() {
                         style={styles.input}
                         aria-label="Toggle theme"
                     />
+                    
                     <span style={styles.slider}>
                         <span style={styles.thumb} />
                     </span>

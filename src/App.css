@@ -52,8 +52,8 @@
   
   border-radius: 10px;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.5s !important; 
-  transition-delay: 1s !important;
+  transition-duration: 0.3s !important; 
+  transition-delay: 0s !important;
 }
 
 .nav-item:hover {

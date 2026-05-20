@@ -19,7 +19,6 @@ function Navbar() {
         display: 'flex',
         justifyContent: 'center',
         alignContent: 'center',
-        // marginTop: '5px',
         gap: '12px',
         TextDecoderation: 'none',
         marginTop: '35px'

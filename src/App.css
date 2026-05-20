@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 10px 16px;
+  
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.nav-item:hover {
+  text-decoration: underline !important;
+  text-decoration-color: black;
+}
+
+.nav-item.active {
+  background-color: transparent;
+  font-weight: 600;
+  opacity: 1;
+  text-decoration: underline !important;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px;
+}

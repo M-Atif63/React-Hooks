@@ -18,9 +18,9 @@ function Navbar() {
     const navListStyle = {
         display: 'flex',
         justifyContent: 'center',
-        alignContent:'center',
-        marginTop: '5px',
-        gap: '30px',
+        alignContent: 'center',
+        // marginTop: '5px',
+        gap: '12px',
         TextDecoderation: 'none',
         marginTop: '35px'
     }
@@ -34,6 +34,8 @@ function Navbar() {
             height: '20px',
             padding: '7px',
             boxSizing: 'border-box',
+            marginTop:'15px',
+            margin: '15px'
         },
         input: {
             opacity: 0,
@@ -76,15 +78,15 @@ function Navbar() {
                 <h3>Muhammed Atif</h3>
             </div>
             <div className='navList' style={navListStyle}>
-                <NavLink to={'/'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Home</NavLink>
-                <NavLink to={'/about'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
-                <NavLink to={'/blogs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Blogs</NavLink>
-                <NavLink to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</NavLink>
-                <NavLink to={'/feedback'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Feedback</NavLink>
-                <NavLink to={'/contact'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Contact</NavLink>
-                <NavLink to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
-                <Btns btnValue="Login"/>
-                 <label style={styles.label} htmlFor="theme-toggle-input">
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/'} style={{ color: theme === 'light' ? 'black' : 'white', }}>Home</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/about'} style={{color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/blogs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Blogs</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/feedback'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Feedback</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/contact'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Contact</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
+                <Btns btnValue="Login" />
+                <label style={styles.label} htmlFor="theme-toggle-input">
                     <input
                         type="checkbox"
                         id="theme-toggle-input"

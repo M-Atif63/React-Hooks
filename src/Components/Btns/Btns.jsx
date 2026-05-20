@@ -25,10 +25,12 @@ function Btns(props) {
     transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
     transform: isActive ? 'scale(0.96)' : 'scale(1)',
     boxShadow: isHovered ? '0 4px 12px rgba(0, 0, 0, 0.08)' : 'none',
+    marginLeft:'15px',
+    marginRight:'15px'
   };
 
   return (
-    <div style={{ display: 'inline-block' ,marginTop:'-5px'}}>
+    <div style={{ display: 'inline-block' ,marginTop:'5px'}}>
       <button 
         style={buttonStyle}
         className={props.className} 

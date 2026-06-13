@@ -11,3 +11,17 @@
 // }
 
 // export default AboutHooks
+
+import React from 'react'
+
+function AboutHooks() {
+
+  
+  return (
+    <div>
+
+    </div>
+  )
+}
+
+export default AboutHooks

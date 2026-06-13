@@ -22,12 +22,12 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
 import Home from '../Pages/Home'
-import About from '../Pages/About'
 import Feedback from '../Pages/Feedback'
 import Contact from '../Pages/Contact'
 import Docs from '../Pages/Docs'
 import Features from '../Pages/Features'
-import Blogs from '../Pages/Blogs'
+import Blogs from '../Pages/AboutUseState'
+import AboutHooks from '../Pages/AboutHooks'
 
 function Routing() {
   return (
@@ -35,7 +35,7 @@ function Routing() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
+        <Route path='/about' element={<AboutHooks />}/>
         <Route path='/feedback' element={<Feedback/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path='/docs' element={<Docs/>}/>

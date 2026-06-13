@@ -79,10 +79,10 @@ function Navbar() {
             <div className='navList' style={navListStyle}>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/'} style={{ color: theme === 'light' ? 'black' : 'white', }}>Home</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/about'} style={{color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/blogs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Blogs</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseState'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseState</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/feedback'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Feedback</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/contact'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Contact</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseEffect'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseEffect</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
                 <Btns btnValue="Login" />
                 <label style={styles.label} htmlFor="theme-toggle-input">

@@ -28,6 +28,7 @@ import Docs from '../Pages/Docs'
 import Features from '../Pages/Features'
 import Blogs from '../Pages/AboutUseState'
 import AboutHooks from '../Pages/AboutHooks'
+import AboutUseState from '../Pages/AboutUseState'
 
 function Routing() {
   return (
@@ -37,9 +38,9 @@ function Routing() {
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<AboutHooks />}/>
         <Route path='/feedback' element={<Feedback/>}/>
-        <Route path='/blogs' element={<Blogs/>}/>
+        <Route path='/AboutUseState' element={<AboutUseState/>}/>
         <Route path='/docs' element={<Docs/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/AboutUseEffect' element={<Contact/>}/>
         <Route path='/features' element={<Features/>}/>
       </Routes>
     </BrowserRouter>

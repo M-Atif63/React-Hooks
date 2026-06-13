@@ -18,7 +18,9 @@ import React from 'react'
 function AboutUseEffect() {
   return (
     <div>
-      
+      <h1>
+        About Use Effect
+      </h1>
     </div>
   )
 }

@@ -31,7 +31,6 @@ function Docs() {
     <h1>Current Value : {inputValue}</h1>
     <h1>Previous Value : {previousValue.current.value}</h1> */}
     </div>
-
   )
 }
 

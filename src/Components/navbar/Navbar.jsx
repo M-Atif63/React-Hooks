@@ -81,7 +81,7 @@ function Navbar() {
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/about'} style={{color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseState'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseState</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/feedback'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Feedback</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/ReactForms'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>React Forms</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseEffect'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseEffect</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
                 <Btns btnValue="Login" />

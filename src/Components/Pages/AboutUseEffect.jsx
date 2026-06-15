@@ -13,16 +13,16 @@
 // export default AboutUseEffect
 
 
-import React from 'react'
+// import React from 'react'
 
-function AboutUseEffect() {
-  return (
-    <div>
-      <h1>
-        About Use Effect
-      </h1>
-    </div>
-  )
-}
+// function AboutUseEffect() {
+//   return (
+//     <div>
+//       <h1>
+//         About Use Effect
+//       </h1>
+//     </div>
+//   )
+// }
 
-export default AboutUseEffect
+// export default AboutUseEffect

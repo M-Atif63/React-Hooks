@@ -22,8 +22,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
 import Home from '../Pages/Home'
-import Feedback from '../Pages/Feedback'
-import Contact from '../Pages/AboutUseEffect'
+import AboutUseEffect from '../Pages/AboutUseEffect'
 import Docs from '../Pages/Docs'
 import Features from '../Pages/Features'
 import Blogs from '../Pages/AboutUseState'
@@ -41,7 +40,7 @@ function Routing() {
         <Route path='/ReactForms' element={<ReactForms/>}/>
         <Route path='/AboutUseState' element={<AboutUseState/>}/>
         <Route path='/docs' element={<Docs/>}/>
-        <Route path='/AboutUseEffect' element={<Contact/>}/>
+        <Route path='/AboutUseEffect' element={<AboutUseEffect/>}/>
         <Route path='/features' element={<Features/>}/>
       </Routes>
     </BrowserRouter>

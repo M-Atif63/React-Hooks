@@ -24,9 +24,9 @@ function AboutUseEffect() {
         else if (hours == 24) {
             setHours(0)
         }
-        else if (dayOrNight <= 13) {
-            setDayOrNight("PM")
-        }
+        // else if (dayOrNight <= 13) {
+        //     setDayOrNight("PM")
+        // }
     })
     return (
         <div>

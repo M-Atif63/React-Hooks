@@ -12,11 +12,13 @@
 
 // export default AboutUseState
 
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { ProjectTheme } from './ChangTheme'
 function AboutUseState() {
+  const {theme} = useContext(ProjectTheme)
   return (
     <div>
+      <div style={{ background: theme === 'light' ? 'white' : '#222', color: theme === 'light' ? 'black' : 'white', height: '100vh' }}></div>
       <h1>
       About Use State
       </h1>

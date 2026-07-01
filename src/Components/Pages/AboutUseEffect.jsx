@@ -54,10 +54,12 @@ function AboutUseEffect() {
                         <h1 style={{
                             margin: '0px',
 
-                        }}>{hours} : {minutes} : {seconds}<span style={{
-                            paddingLeft: '20px',
-                            fontSize: "40px"
-                        }}>
+                        }}>{hours} : {minutes} : {seconds}
+                            <span
+                                style={{
+                                    paddingLeft: '20px',
+                                    fontSize: "40px"
+                                }}>
                                 {dayOrNight}</span>
                         </h1>
                     </div>

@@ -29,6 +29,7 @@ import Blogs from '../Pages/AboutUseState'
 import AboutHooks from '../Pages/AboutHooks'
 import AboutUseState from '../Pages/AboutUseState'
 import ReactForms from '../Pages/ReactForm'
+import AboutUseRef from '../Pages/AboutUseRef'
 
 function Routing() {
   return (
@@ -39,6 +40,7 @@ function Routing() {
         <Route path='/about' element={<AboutHooks />}/>
         <Route path='/ReactForms' element={<ReactForms/>}/>
         <Route path='/AboutUseState' element={<AboutUseState/>}/>
+        <Route path='/AboutUseRef' element={<AboutUseRef/>}/>
         <Route path='/docs' element={<Docs/>}/>
         <Route path='/AboutUseEffect' element={<AboutUseEffect/>}/>
         <Route path='/features' element={<Features/>}/>

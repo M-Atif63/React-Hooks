@@ -33,7 +33,7 @@ function Navbar() {
             height: '20px',
             padding: '7px',
             boxSizing: 'border-box',
-            marginTop:'15px',
+            marginTop: '15px',
             margin: '15px'
         },
         input: {
@@ -78,11 +78,12 @@ function Navbar() {
             </div>
             <div className='navList' style={navListStyle}>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/'} style={{ color: theme === 'light' ? 'black' : 'white', }}>Home</NavLink>
-                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/about'} style={{color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/about'} style={{ color: theme === 'light' ? 'black' : 'white', }}>About</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseState'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseState</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/docs'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Docs</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/ReactForms'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>React     </NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseEffect'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseEffect</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/AboutUseRef'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>UseRef</NavLink>
                 <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to={'/features'} style={{ textDecoration: 'none', color: theme === 'light' ? 'black' : 'white', }}>Features</NavLink>
                 <Btns btnValue="Login" />
                 <label style={styles.label} htmlFor="theme-toggle-input">

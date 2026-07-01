@@ -28,33 +28,9 @@ import { ProjectTheme } from './ChangTheme'
 
 const AboutUseRef = () => {
     const { theme } = useContext(ProjectTheme)
-
-    const [hours,setHours] = useState(24);
-    const [minutes,setMinutes] = useState(60);
-    const [seconds,setSeconds] = useState(60);
-
-    useEffect(()=>{
-        setTimeout(()=>{
-            setSeconds((seconds) => seconds - 1)
-        },1000)
-        if(seconds == 0){
-            setMinutes((minutes) => minutes - 1)
-            setSeconds(60)
-        }
-    })
     return (
         <div>
             <div style={{ background: theme === 'light' ? 'white' : '#222', color: theme === 'light' ? 'black' : 'white', height: '100vh' }}>
-                <div style={{
-                    width: '100%',
-                    textAlign: 'center',
-                    fontSize: '50px'
-                }}>
-                    <h1 style={{
-                        margin: '0px',
-                    }}>{hours} : {minutes} : {seconds}
-                    </h1>
-                </div>
             </div>
         </div>
     )

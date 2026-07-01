@@ -4,25 +4,25 @@ import { ProjectTheme } from './ChangTheme'
 
 function AboutUseEffect() {
     const { theme } = useContext(ProjectTheme)
-    const [hours, setHours] = useState(0)
-    const [minutes, setMinutes] = useState(0)
-    const [seconds, setSeconds] = useState(0)
+    const [hours, setHours] = useState(24)
+    const [minutes, setMinutes] = useState(60)
+    const [seconds, setSeconds] = useState(60)
     const [dayOrNight, setDayOrNight] = useState("AM")
 
     useEffect(() => {
         setTimeout(() => {
-            setSeconds(seconds + 1)
+            setSeconds(seconds - 1)
         }, 1000)
-        if (seconds == 60) {
-            setSeconds(0)
-            setMinutes(minutes + 1)
+        if (seconds == 0) {
+            setSeconds(60)
+            setMinutes(minutes - 1)
         }
-        else if (minutes == 60) {
-            setMinutes(0)
-            setHours(hours + 1)
+        else if (minutes == 0) {
+            setMinutes(60)
+            setHours(hours - 1)
         }
-        else if (hours == 24) {
-            setHours(0)
+        else if (hours == 0) {
+            setHours(24)
         }
         // else if (dayOrNight <= 13) {
         //     setDayOrNight("PM")
@@ -54,12 +54,10 @@ function AboutUseEffect() {
                         <h1 style={{
                             margin: '0px',
 
-                        }}>{hours} : {minutes} : {seconds}
-                            <span
-                                style={{
-                                    paddingLeft: '20px',
-                                    fontSize: "40px"
-                                }}>
+                        }}>{hours} : {minutes} : {seconds}<span style={{
+                            paddingLeft: '20px',
+                            fontSize: "40px"
+                        }}>
                                 {dayOrNight}</span>
                         </h1>
                     </div>
